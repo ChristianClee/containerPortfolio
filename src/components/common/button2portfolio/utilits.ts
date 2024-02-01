@@ -1,29 +1,37 @@
+import { useState } from "react"
+type btnRefT = React.RefObject<HTMLAnchorElement>
 
-type btnRefT= React.RefObject<HTMLAnchorElement>
+
+
+
+
 
 export function addClass(
   btnRef:btnRefT,
   style: string,
   state: boolean,
-  func: ()=> void
+  func: (arg: boolean)=> void
 ) {
-
   const btnRef_ = btnRef.current
     if (state && btnRef_) {
       btnRef_.classList.add(style)
-      func()
+      func(false)
+      setTimeout(() => {
+        btnRef_.classList.remove(style)
+        func(true);
+        }, 1400);
   }
-    // if (btnRef_) {
-  //   const cl = btnRef_.classList[0]
-  //   const unActive = document.getElementsByClassName(cl)
-  //   for (let i = 0; i < unActive.length; i++){
-  //     const elem = unActive[i]   
-  //   }
-  // }
+
 }
+
   
-export function goLink(timeDelay: number) {
-  setTimeout(() => {
-    window.location.href = "https://www.google.com/"
-  },timeDelay)
+export function goLink(
+  link: string,
+  clickRef: React.MutableRefObject<boolean>,
+  timeDelay: number
+) {
+  return setTimeout(() => {
+    window.open(link, "_blank");
+    clickRef.current = true
+  }, timeDelay);
 }

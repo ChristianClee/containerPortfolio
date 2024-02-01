@@ -1,0 +1,14 @@
+.aaa-enter {
+  top: -10%;
+}
+.aaa-enter-active {
+  top: 0;
+  transition: top 1500ms;
+}
+.aaa-exit {
+  top: 0;
+}
+.aaa-exit-active {
+  top: -10%;
+  transition: top 1500ms;
+}

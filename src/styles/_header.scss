@@ -13,7 +13,7 @@ header{
 .header {
   border-bottom: 1px solid black;
   z-index: 23;
-  background-color: rgba(141, 140, 140, 0.404);
+  // background-color: rgba(141, 140, 140, 0.404);
   &__logo{
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ header{
     position: relative;
     width: 60px;
     height: 60px;
-    background-color: beige;
+    // background-color: beige;
     border-radius: 50%;
     overflow: hidden;
   }

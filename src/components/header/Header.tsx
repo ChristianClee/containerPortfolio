@@ -29,7 +29,6 @@ const Header: React.FC = () => {
         <nav className='header__nav'>
         </nav>
       </header>
-
     </>
     
   );

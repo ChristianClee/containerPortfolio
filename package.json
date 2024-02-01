@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://christianclee.github.io/Clocks/",
+  "homepage": "https://christianclee.github.io/containerPortfolio/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "^16.18.39",
@@ -14,6 +14,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-transition-group": "^4.4.10",
     "sass": "^1.64.1"
   }
 }

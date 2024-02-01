@@ -1,0 +1,54 @@
+.wrapper{
+  
+}
+.flashing, .normal {
+  font-size: 3rem;
+  color: #393939;
+}
+
+.flashing{
+  animation: flash 1s infinite linear
+}
+.normal{
+  animation: norm 3s infinite linear  forwards;
+  animation-delay: var(--delay);
+  color: rgb(232, 28, 195);
+}
+
+
+
+@keyframes flash{
+  0%{
+    color: #393939;
+    text-shadow: none;
+  }
+  18%{
+    color: #393939;
+    text-shadow: none;
+  }
+  20%{
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #fff900;
+  }
+  30%{
+    color: #393939;
+    text-shadow: none;
+  }
+  35%{
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #fff900;
+  }
+}
+
+@keyframes norm{
+  0%{
+    color: rgb(0, 170, 255);
+    text-shadow: 0 0 7px rgb(0, 170, 255), 0 0 3px rgb(0, 170, 255);
+  }
+  50%{
+    color: rgb(232, 28, 195);
+  }
+  100%{
+    color: rgb(232, 28, 195);
+  }
+}

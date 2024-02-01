@@ -29,15 +29,19 @@ section{
   display: flex;
   justify-content: center;
   width: 100%;
+  background: rgb(112, 70, 105);
 }
 main{
+  position: relative;
   padding: 0 .5rem;
   margin-top: $heightHeader;
   width: 100%;
   max-width: 1500px;
-  display: flex;
+  // display: flex;
   justify-content: center;
-  background-color:grey;
+  // border: 4px dashed black;
+  // background-color:grey;
+  z-index: 2;
   
 }
 

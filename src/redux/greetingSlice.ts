@@ -14,8 +14,8 @@ export const greetingSlice = createSlice({
   name: 'greeting',
   initialState,
   reducers: {
-    getClickButtonFalse(state) {
-      state.onClickButton = false
+    getClickButtonFalse(state, actions: PayloadAction<boolean> ) {
+      state.onClickButton = actions.payload
     },
   },
 })
